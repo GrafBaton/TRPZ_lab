@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Play&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="app.js"></script>
@@ -12,6 +12,20 @@
 
 
 <body>
+
+<div id="openModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Название</h3>
+        <a href="#close" title="Close" class="close">×</a>
+      </div>
+      <div class="modal-body">
+        <p>Содержимое модального окна...</p>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!--SVG SPRITE-->
     <svg style="display: none;">
@@ -71,7 +85,7 @@
            <div class="header__inner">
                 <div class="header__logo">CHAIR<span class="text__color">RY</span></div>
                 <div class="nav">
-                    <a class="nav__link" href="#">О НАС</a>
+                    <a class="nav__link" href="#openModal">О НАС</a>
                     <a class="nav__link" href="#">КАТАЛОГ</a>
                     <a class="nav__link" href="#">ОПЛАТА И ДОСТАВКА</a>
                     <a class="nav__link" href="#">КОНТАКТЫ</a>
